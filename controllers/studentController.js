@@ -4,6 +4,7 @@ exports.student_get = function(req, res) {
     let filters = req.query
 
     Student.find(filters)
+	.populate('school')
 	.then(students => {
 		res.json({
 			confirmation: 'success',
