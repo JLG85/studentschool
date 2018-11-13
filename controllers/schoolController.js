@@ -75,7 +75,8 @@ exports.school_id = function(req, res) {
 	.then(student => {
 		res.json({
 			confirmation: 'success',
-			data: School	})
+            data: school
+        })  //Problem
 	})
 	.catch(err => {
 		res.json({
