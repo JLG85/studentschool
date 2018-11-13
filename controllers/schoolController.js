@@ -1,5 +1,5 @@
 var School = require('../models/school');
-var School = require('../models/student');
+var Student = require('../models/student');
 
 exports.school_get = function(req, res) {
     let filters = req.query
