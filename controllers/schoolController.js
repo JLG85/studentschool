@@ -72,7 +72,7 @@ exports.school_id = function(req, res) {
     const id = req.params.id
 
 	School.findById(id)
-	.then(student => {
+	.then(school => {
 		res.json({
 			confirmation: 'success',
             data: school
@@ -91,7 +91,7 @@ exports.school_post = function(req, res) {
 	.then(school => {
 		res.json({
 			confirmation: 'success',
-			data: School
+			data: school
 		})
 	})
 	.catch(err => {
